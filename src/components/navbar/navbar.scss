@@ -46,8 +46,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 100%;
     background-color: #fcf5f3;
+    height: 100%;
 
     @include md {
       background-color: transparent;
@@ -68,7 +68,7 @@ nav {
         cursor: pointer;
       }
       @include sm {
-        display: initial;
+        display: inline;
       }
     }
     .menu {
@@ -85,6 +85,7 @@ nav {
       justify-content: center;
       flex-direction: column;
       font-size: 24px;
+      border-bottom-left-radius: 15px;
       &.active {
         right: 0;
       }

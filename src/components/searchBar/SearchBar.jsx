@@ -40,7 +40,7 @@ function SearchBar() {
           name="maxPrice"
           min={0}
           max={10000000}
-          placeholder="MaxP Price"
+          placeholder="Max Price"
         ></input>
         <button>
           <img src="/search.png" alt="" />

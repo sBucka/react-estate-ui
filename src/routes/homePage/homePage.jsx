@@ -24,7 +24,7 @@ function HomePage() {
               <h2>Award Gained</h2>
             </div>
             <div class="box">
-              <h1>1200</h1>
+              <h1>1200+</h1>
               <h2>Property Ready</h2>
             </div>
           </div>
