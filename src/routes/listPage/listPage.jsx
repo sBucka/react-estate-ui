@@ -7,15 +7,16 @@ function ListPage() {
   const data = listData;
   return (
     <div className="listPage">
-      <div class="listContainer">
-        <div class="wrapper">
+      <div className="listContainer">
+        <div className="wrapper">
           <Filter></Filter>
           {data.map((item) => {
+            console.log(item)
             return <Card key={item.id} item={item}></Card>;
           })}
         </div>
       </div>
-      <div class="mapContainer">Map</div>
+      <div className="mapContainer">Map</div>
     </div>
   );
 }

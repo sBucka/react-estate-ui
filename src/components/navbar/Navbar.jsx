@@ -1,37 +1,40 @@
 import React, { useState } from "react";
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <nav>
       <div class="left">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <img src="/logo.png" alt="" />
           <span>LamaEstate</span>
-        </a>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/t">Contac</a>
-        <a href="/">Agents</a>
+        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/">About</Link>
+        <Link to="/">Contac</Link>
+        <Link to="/">Agents</Link>
       </div>
       <div class="right">
-        <a href="/">Sign in</a>
-        <a href="/" className="register">
+        <Link to="/">Sign in</Link>
+        <Link to="/" className="register">
           Sign up
-        </a>
+        </Link>
         <div class="menuIcon">
-          <img src="/menu.png" alt="" onClick={()=>setOpen((prev)=>!prev)}/>
+          <img
+            src="/menu.png"
+            alt=""
+            onClick={() => setOpen((prev) => !prev)}
+          />
         </div>
-        <div class={open? "menu active":"menu"}>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/t">Contac</a>
-          <a href="/">Agents</a>
-          <a href="/">Sign in</a>
-          <a href="/">
-            Sign up
-          </a>
+        <div class={open ? "menu active" : "menu"}>
+          <Link to="/">Home</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Contac</Link>
+          <Link to="/">Agents</Link>
+          <Link to="/">Sign in</Link>
+          <Link to="/">Sign up</Link>
         </div>
       </div>
     </nav>
