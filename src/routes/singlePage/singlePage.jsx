@@ -56,9 +56,44 @@ function SinglePage() {
             </div>
           </div>
           <p class="title">Sizes</p>
-          <div class="sizes"></div>
+          <div class="sizes">
+            <div class="size">
+              <img src="/size.png " alt="" />
+              <span>80sqm</span>
+            </div>
+            <div class="size">
+              <img src="/bed.png " alt="" />
+              <span>2 beds</span>
+            </div>
+            <div class="size">
+              <img src="/bath.png " alt="" />
+              <span>1 bathroom</span>
+            </div>
+          </div>
           <p class="title">Nearby Places</p>
-          <div class="listHorizontal"></div>
+          <div class="listHorizontal">
+            <div class="feature">
+              <img src="/utility.png" alt="" />
+              <div class="featureText">
+                <span>Utilities</span>
+                <p>Renter is responsible</p>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="/pet.png" alt="" />
+              <div class="featureText">
+                <span>Pet policy</span>
+                <p>Pets allowed</p>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="/fee.png" alt="" />
+              <div class="featureText">
+                <span>Property Fees</span>
+                <p>Must have 3x tthe rent in total household income</p>
+              </div>
+            </div>
+          </div>
           <p class="title">Location</p>
           <div class="mapContainer">
             <Map items={[singlePostData]}></Map>
