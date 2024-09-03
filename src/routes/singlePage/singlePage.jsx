@@ -75,22 +75,22 @@ function SinglePage() {
             <div class="feature">
               <img src="/utility.png" alt="" />
               <div class="featureText">
-                <span>Utilities</span>
-                <p>Renter is responsible</p>
+                <span>School</span>
+                <p>200m away</p>
               </div>
             </div>
             <div class="feature">
               <img src="/pet.png" alt="" />
               <div class="featureText">
-                <span>Pet policy</span>
-                <p>Pets allowed</p>
+                <span>Bus Stop</span>
+                <p>200m away</p>
               </div>
             </div>
             <div class="feature">
               <img src="/fee.png" alt="" />
               <div class="featureText">
-                <span>Property Fees</span>
-                <p>Must have 3x tthe rent in total household income</p>
+                <span>Restaurant</span>
+                <p>200m away</p>
               </div>
             </div>
           </div>
