@@ -3,6 +3,7 @@ import "./singlePage.scss";
 import { singlePostData, userData } from "../../lib/dummyData";
 import Map from "../../components/map/Map";
 
+
 function SinglePage() {
   return (
     <div className="singlePage">
@@ -16,7 +17,7 @@ function SinglePage() {
                 <div class="address">
                   <img src="/pin.png" />
                   <span>{singlePostData.address}</span>
-                </div>
+                  </div>
                 <div class="price">$ {singlePostData.price}</div>
               </div>
               <div class="user">
@@ -25,7 +26,7 @@ function SinglePage() {
               </div>
             </div>
             <div class="bottom">{singlePostData.description}</div>
-          </div>
+        </div>
         </div>
       </div>
 

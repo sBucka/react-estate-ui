@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
+import { userData } from "../../lib/dummyData";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const user = true;
   return (
     <nav>
       <div class="left">
@@ -17,10 +20,23 @@ const Navbar = () => {
         <Link to="/">Agents</Link>
       </div>
       <div class="right">
-        <Link to="/">Sign in</Link>
-        <Link to="/" className="register">
-          Sign up
-        </Link>
+        {user ? (
+          <div class="user">
+            <img src={userData.img} alt="" />
+            <span>John Doe</span>
+            <Link to="/profile" className="profile">
+              <div class="notification">3</div>
+              <span>Profile</span>
+            </Link>
+          </div>
+        ) : (
+          <>
+            <Link to="/">Sign in</Link>
+            <Link to="/" className="register">
+              Sign up
+            </Link>
+          </>
+        )}
         <div class="menuIcon">
           <img
             src="/menu.png"
